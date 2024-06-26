@@ -1,0 +1,11 @@
+﻿@model DepartmentViewModel
+<h3 class="alert alert-danger">Delete @Model.EnglishName Department</h3>
+<form asp-action="Delete" id="form" id="form" data-id="@(Model?.Id ?? null)" enctype="multipart/form-data">
+    <partial name="_CreateEditDeleteDepartment" />
+    <br />
+    <div>
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a input type="button" href="/Departments/Index" class="btn btn-outline-secondary">Back</a>
+    </div>
+
+</form>

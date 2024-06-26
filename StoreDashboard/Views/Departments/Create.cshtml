@@ -1,0 +1,28 @@
+﻿@model DepartmentViewModel
+<h3 class="alert alert-success">Create Department</h3>
+<div class="container">
+    <div class="page-header">
+        <div class="page-title">
+            <h3>Departments</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <form asp-action="Create" class="col-lg-12" method="POST" data-role="validator" data-on-before-submit="no_submit" data-on-error-input="notifyOnErrorInput" data-show-error-hint="false" novalidate="novalidate" enctype="multipart/form-data">
+            <partial name="_CreateEditDeleteDepartment" />
+            <div class="col-auto">
+                <label asp-for="Image" class="col-form-label"></label>
+            </div>
+            <div class="col-auto">
+                <input asp-for="Image" class="form-control" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <br />
+            <div>
+                <input type="submit" class="btn btn-primary" />
+            </div>
+        </form>
+
+    </div>
+
+</div>

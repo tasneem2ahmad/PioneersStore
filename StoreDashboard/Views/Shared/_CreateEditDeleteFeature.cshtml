@@ -1,0 +1,20 @@
+﻿@model FeatureViewModel
+<div class="col-auto">
+    @if (Model != null && Model.Id != 0)
+    {
+        <input asp-for="Id" hidden />
+    }
+    <label asp-for="ArabicName" class="col-form-label"></label>
+</div>
+<div class="col-auto">
+    <input asp-for="ArabicName" class="form-control" />
+    <span asp-validation-for="ArabicName" class="text-danger"></span>
+</div>
+
+<div class="col-auto">
+    <label asp-for="EnglishName" class="col-form-label"></label>
+</div>
+<div class="col-auto">
+    <input asp-for="EnglishName" class="form-control" />
+    <span asp-validation-for="EnglishName" class="text-danger"></span>
+</div>

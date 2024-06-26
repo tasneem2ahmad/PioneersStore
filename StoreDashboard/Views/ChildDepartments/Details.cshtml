@@ -1,0 +1,13 @@
+﻿@model ChildDepartmentViewModel
+<h3 class="alert alert-secondary">Details of @Model.EnglishName SubDepartment</h3>
+<form asp-action="Details">
+    <partial name="_CreateEditDeleteChildDepartment" />
+    <br />
+    <div>
+        <a class="btn btn-primary" asp-action="Edit" asp-route-id="@Model.Id">
+            <i class="fas fa-edit"></i>
+            Edit
+        </a> |
+        <a asp-action="Index" class="btn btn-outline-dark"><i class="fa-solid fa-house"></i> Back</a>
+    </div>
+</form>

@@ -1,0 +1,59 @@
+﻿@using Pioneers.DAL.Entities
+@model DepartmentViewModel
+<div class="col-auto">
+    @if (Model != null && Model.Id != 0)
+    {
+        <input asp-for="Id" hidden />
+    }
+    <label asp-for="ArabicName" class="col-form-label"></label>
+</div>
+<div class="col-auto">
+    <input asp-for="ArabicName" class="form-control" />
+    <span asp-validation-for="ArabicName" class="text-danger"></span>
+</div>
+<div class="col-auto">
+    <label asp-for="Description" class="col-form-label"></label>
+</div>
+<div class="col-auto">
+    <input asp-for="Description" class="form-control" />
+    <span asp-validation-for="Description" class="text-danger"></span>
+</div>
+<div class="col-auto">
+    <label asp-for="EnglishName" class="col-form-label"></label>
+</div>
+<div class="col-auto">
+    <input asp-for="EnglishName" class="form-control" />
+    <span asp-validation-for="EnglishName" class="text-danger"></span>
+</div>
+<div class="col-auto">
+    <label asp-for="EnglishDescription" class="col-form-label"></label>
+</div>
+<div class="col-auto">
+    <input asp-for="EnglishDescription" class="form-control" />
+    <span asp-validation-for="EnglishDescription" class="text-danger"></span>
+</div>
+@* <div class="col-auto">
+    <label class="col-form-label">SubDepartment Name</label>
+</div>
+<div class="col-auto">
+    <select asp-for="ParentDepartmentId" id="selectedStudent" class="form-control">
+
+        @if (ViewData["Department"] != null)
+        {
+            foreach (var student in ViewData["Department"] as List<Department>)
+            {
+                <option value="@student.ParentDepartmentId">@student.EnglishName</option>
+            }
+        }
+    </select>
+    <span asp-validation-for="ParentDepartmentId" class="text-danger"></span>
+</div> *@
+<br />
+<div class="col-auto">
+<div class="form-check form-switch">
+    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked asp-for="IsApproved">
+    <label class="form-check-label" for="flexSwitchCheckChecked">State</label>
+</div>
+</div>
+
+
