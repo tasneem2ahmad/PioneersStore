@@ -1,0 +1,22 @@
+﻿@model FeatureViewModel
+<h3 class="alert alert-success">Create Feature</h3>
+<div class="container">
+    <div class="page-header">
+        <div class="page-title">
+            <h3>Featres</h3>
+        </div>
+    </div>
+
+    <div class="row">
+        <form asp-action="Create" class="col-lg-12" method="POST" data-role="validator" data-on-before-submit="no_submit" data-on-error-input="notifyOnErrorInput" data-show-error-hint="false" novalidate="novalidate" enctype="multipart/form-data">
+            <partial name="_CreateEditDeleteFeature" />
+            
+            <br />
+            <div>
+                <input type="submit" class="btn btn-primary" />
+            </div>
+        </form>
+
+    </div>
+
+</div>

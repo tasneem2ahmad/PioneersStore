@@ -1,0 +1,252 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+.page-header {
+    border: 0;
+    margin: 0;
+    background: #ffffff;
+    padding: 10px 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: -1px 1px 2px #cfcfcf;
+}
+.crumbs .breadcrumb {
+    display: inline-flex;
+    padding: 0;
+    background-color: transparent;
+    margin: 0;
+    margin-top: 15px;
+}
+#content > .container {
+    padding: 0 30px;
+    max-width: none !important;
+}
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.widget.box .widget-header {
+    background: #fff;
+    padding: 0px 8px 0px;
+    border-top-right-radius: 6px;
+    border-top-left-radius: 6px;
+}
+.layout-spacing {
+    margin-bottom: 40px;
+}
+.widget {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.widget.box .widget-header {
+        background: #fff;
+        padding: 0px 8px 0px;
+        border-top-right-radius: 6px;
+        border-top-left-radius: 6px;
+
+}
+.widget-content-area {
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+    -webkit-box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
+    box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
+}
+.layoutcontainer{
+    display:flex;
+    justify-content:space-between;
+}
+.dashboard {
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 15.32px;
+    font-weight: 200;
+    color: #beb3b6;
+    margin-bottom: 5px;
+    color: #ffffff;
+    border-radius: 5px;
+    background: #181722;
+}
+#sidebar {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: #181722;
+}
+.sidebar-theme {
+    background: #181722;
+}
+.sidebar-wrapper {
+    width: 255px;
+}
+.menu {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+#sidebar .theme-brand {
+    background-color: #1f212d;
+    box-shadow: -8px -4px 6px 1px rgb(15, 14, 32);
+    padding: 0.9px;
+}
+#sidebar ul.menu-categories {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+#sidebar ul.menu-categories li.menu:first-child {
+        margin-top: 20px;
+        margin-bottom: 0;
+}   
+#sidebar ul.menu-categories li.menu:first-child > a {
+            background-color: #E91E63 !important;
+            color: #ffffff;
+            border-radius: 5px;
+            padding: 10px;
+}
+.dropdown-toggle{
+
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 15.32px;
+    font-weight: 200;
+    color: #beb3b6;
+    padding: 3px 5px;
+    margin-bottom: 5px;
+}
+#sidebar ul.menu-categories ul.submenu > li a {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    padding-right: 14px;
+    margin-right: 20px;
+    font-size: 13.32px;
+    font-weight: 200;
+    color: #b2b2b2;
+    white-space: normal;
+    border-right: 2px solid #888ea8;
+    overflow: unset;
+}
+#sidebar ul.menu-categories li.menu > .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 15.32px;
+    font-weight: 200;
+    color: #beb3b6;
+    padding: 3px 5px;
+    margin-bottom: 5px;
+}
+#sidebar ul.menu-categories li.menu > .dropdown-toggle {
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    font-size: 15.32px;
+    color: #beb3b6;
+    padding: 3px 5px;
+    margin-bottom: 5px;
+}
+    #sidebar ul.menu-categories li.menu > .dropdown-toggle i {
+        color: #beb3b6;
+        font-size: 21px;
+        margin-left: 6px;
+        vertical-align: middle;
+        padding: 7px;
+        border-radius: 50%;
+    }
+    #sidebar ul.menu-categories li.menu > .dropdown-toggle > div {
+        align-self: center;
+    }
+    #sidebar ul.menu-categories li.menu > .dropdown-toggle[aria-expanded="true"] i {
+        background-color: #322c35;
+        color: #fff;
+    }
+    #sidebar ul.menu-categories li.menu > .dropdown-toggle[aria-expanded="true"] span {
+        color: #fff;
+    }
+    #sidebar ul.menu-categories li.menu > .dropdown-toggle i.flaticon-right-arrow, #sidebar ul.menu-categories li.menu > .dropdown-toggle i.flaticon-down-arrow {
+        font-size: 11px;
+        vertical-align: middle;
+        margin-left: 0;
+        transform: rotate(180deg);
+    }
+.list-unstyled {
+    padding-left: 0;
+    list-style: none;
+    padding-right:0;
+}
+.itemindashboardwithicon {
+    padding-left: 3.5rem;
+}
+.dropdown-toggle::after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    /* border-top: .3em solid; */
+    /*border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;*/
+}
+a {
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+}
+.dashboardelementtest {
+    background-color: transparent;
+    border: none;
+    color: #beb3b6; /* Ensures the text color inherits from its parent */
+    box-shadow: none; /* Removes any shadow effects */
+}
+    .dashboardelementtest:hover,
+    .dashboardelementtest:focus {
+        background-color: transparent; /* Ensures no background on hover or focus */
+        border: none;
+        box-shadow: none;
+        color: white; /* Changes the text color to white on hover or focus */
+    }
+.dropdownitem {
+    color: #beb3b6; /* Sets the text color to white */
+    position: relative;
+}
+    .dropdownitem::before {
+        content: '•'; /* Adds a bullet point before each item */
+        color: blue; /* Sets the bullet point color to blue */
+        position: absolute;
+        left: -20px; /* Adjusts the position of the bullet point */
+    }
+.bodycontainer {
+    padding: 2.5rem;
+    width: 80% ;
+    margin-inline: auto;
+}

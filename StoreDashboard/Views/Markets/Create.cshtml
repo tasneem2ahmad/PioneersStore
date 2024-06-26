@@ -1,0 +1,17 @@
+﻿@model MarketViewModel
+<h3 class="alert alert-success">Create Market</h3>
+<form asp-action="Create" enctype="multipart/form-data">
+    <partial name="_CreateEditDeleteMarket" />
+    <div class="col-auto">
+        <label asp-for="Image" class="col-form-label"></label>
+    </div>
+    <div class="col-auto">
+        <input asp-for="Image" class="form-control" />
+        <span asp-validation-for="Image" class="text-danger"></span>
+    </div>
+    <br />
+    <div>
+        <input type="submit" class="btn btn-primary" />
+    </div>
+
+</form>
